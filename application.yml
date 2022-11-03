@@ -13,4 +13,4 @@ spring:
     sender:
       type: rabbit
   rabbitmq:
-    host: ${rabbitmq:localhost}
+    host: localhost
