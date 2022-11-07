@@ -11,7 +11,7 @@ spring:
     activate:
       on-profile: default
   application:
-    name: holiday-reservation
+    name: holiday-reservation-manager
   datasource:
     url: jdbc:mysql://${holiday-reservation-db:localhost}:${holiday-reservation-db-port:3306}/holiday-reservation-db
     username: root
