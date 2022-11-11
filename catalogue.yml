@@ -1,0 +1,22 @@
+server:
+  port: ${random.int(5000,5100)}
+
+spring:
+  mvc:
+    converters:
+      preferred-json-mapper:gson
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: catalogue
+  data:
+    mongodb:
+      user: root
+      password: rootpassword
+      uri: mongodb://${catalogue-db:localhost}:${catalogue-db-port:27018}/catalogue-db
+  jpa:
+    hibernate:
+      ddl-auto: update
