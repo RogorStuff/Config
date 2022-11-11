@@ -1,5 +1,5 @@
 server:
-  port: ${random.int(5000,5100)}
+  port: 5001
 
 spring:
   mvc:
@@ -16,7 +16,7 @@ spring:
     mongodb:
       user: root
       password: rootpassword
-      uri: mongodb://${clothes-db:localhost}:${clothes-db-port:27017}/clothes-db
+      uri: mongodb://${clothes-db:localhost}:${clothes-db-port:27017}/catalogue-db
   jpa:
     hibernate:
       ddl-auto: update
