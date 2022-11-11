@@ -16,7 +16,7 @@ spring:
     mongodb:
       user: root
       password: rootpassword
-      uri: mongodb://${catalogue-db:localhost}:${catalogue-db-port:27018}/catalogue-db
+      uri: mongodb://${catalogue-db:localhost}:${catalogue-db-port:27017}/catalogue-db
   jpa:
     hibernate:
       ddl-auto: update
