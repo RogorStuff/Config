@@ -1,0 +1,22 @@
+server:
+  port: 5001
+
+spring:
+  mvc:
+    converters:
+      preferred-json-mapper:gson
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: personalization
+  data:
+    mongodb:
+      user: root
+      password: rootpassword
+      uri: mongodb://${personalization-db:localhost}:${personalization-db-port:27019}/personalization-db
+  jpa:
+    hibernate:
+      ddl-auto: update
